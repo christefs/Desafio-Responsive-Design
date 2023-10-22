@@ -65,8 +65,8 @@ section {
     order: 1;
     text-align: center;
     
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .ImgCentral, .InfoCentral {
     width: 90%;
@@ -225,6 +225,9 @@ footer .legend, .listContact, .socialNet {
 }
 
 @media (min-width: 900px) {
+    body {
+        min-height: 100vh;
+    }
     
     header {
         height: 15vh;
@@ -244,12 +247,12 @@ footer .legend, .listContact, .socialNet {
     
     aside {
         width: 18%;
-        height: auto;
+        /*height: auto;*/
         order: 1;
     }
     section {
         width: 82%;
-        height: auto;
+        /*height: auto;*/
         order: 2;
     }
     .box {
