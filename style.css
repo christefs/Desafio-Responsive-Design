@@ -6,9 +6,13 @@
 html {
     font-size: 62.5%;
 }
+body {
+    min-height: 100vh;
+}
 header {
     width: 100vw;
     height: 70px;
+    /*height: 15vh;*/
     background-color: purple;
 
     display: flex;
@@ -47,6 +51,7 @@ header {
 main {
     width: 100vw;
     height: auto;
+    /*height: 70vh;*/
     display: flex;
     flex-wrap: wrap;
 
@@ -54,17 +59,31 @@ main {
 }
 section {
     width: 100vw;
-    height: 430px;
+    
+    height: auto;
     background-color: #FAC0F8;
     order: 1;
     text-align: center;
     
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ImgCentral, .InfoCentral {
+    width: 90%;
+    margin: 0 auto;
     
 }
-section img {
-    border: 1.7px black dotted;
+section .ImgCentral h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px;
 }
-section img, .InfoCentral {
+section .ImgCentral img {
+    border: 1.7px black dotted;
+    border-radius: 10px;
+    max-width: 95%;
+}
+section .ImgCentral img, .InfoCentral {
     margin-top: 2rem;
     
         
@@ -73,8 +92,11 @@ section img, .InfoCentral {
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 0.5rem;
-    width: 480px;
+    max-width: 95%;
     margin: 0 auto;
+
+    text-align: center;
+    
     
 }
 aside {
@@ -117,7 +139,6 @@ footer {
     height: auto;
     background-color: purple;
 
-    /*position: absolute;*/
     display: flex;
     flex-wrap: wrap;
 
@@ -163,7 +184,7 @@ footer .legend, .listContact, .socialNet {
     width: 40px;
     height: 40px;
     display: inline;
-    /*padding: 1rem 0.5rem 1rem;*/
+    
     padding-top: 1.4rem;
     padding-right: 0.7rem;
     cursor: pointer;
@@ -204,8 +225,9 @@ footer .legend, .listContact, .socialNet {
 }
 
 @media (min-width: 900px) {
+    
     header {
-        height: 9.37rem;
+        height: 15vh;
     }
     .logo {
         width: 9rem;
@@ -217,7 +239,7 @@ footer .legend, .listContact, .socialNet {
         margin-top: 1rem;
     }
     main {
-        height: 43.75rem;
+        height: 70vh;
     }
     
     aside {
@@ -238,14 +260,13 @@ footer .legend, .listContact, .socialNet {
         
     }
     .box img {
-        /*position: relative;*/
+        
         width: 90%;
         min-width: 15rem;
         max-width: 20rem;
         height: 9.8rem;
         
         border: 1px black dotted;
-        /*margin: 0.7rem 2rem 0 2rem;*/
         margin: auto;
         margin-top: 0.7rem;
         
@@ -253,7 +274,8 @@ footer .legend, .listContact, .socialNet {
     }
 
     footer {
-        height: 9.37rem;
+        
+        height: 15vh;
     }
 
     footer .legend {
