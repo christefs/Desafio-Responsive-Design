@@ -42,9 +42,9 @@ header {
 }
 
 .imgLogo {
-    position: relative;
+    /*position: relative;
     width: auto;
-    /*margin-right: 150px;*/
+    margin-right: 150px;*/
     display: none;
 }
 
@@ -232,6 +232,7 @@ footer .legend, .listContact, .socialNet {
     header {
         height: 15vh;
     }
+    
     .logo {
         width: 9rem;
         height: 7rem;
@@ -259,7 +260,7 @@ footer .legend, .listContact, .socialNet {
         width: 100%;
         text-align: center;
 
-        position: relative;
+        /*position: relative;*/
         
     }
     .box img {
